@@ -5,7 +5,7 @@ const pao = require('./src/data/pao.json')
 const port = process.env.PORT || 8000;
 const host = '0.0.0.0';
 
-server.get('/', (req, res) =>{
+server.get('/pao', (req, res) =>{
     return res.json(pao)
 })
 
